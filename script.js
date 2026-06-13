@@ -35,7 +35,7 @@ const PRODUCTS = [
     name: "Bánh Tét Nếp Tro",
     price: 110000,
     category: "Bánh Tét",
-    image: "Images/banhteneptro.jpg",
+    image: "images/banhteneptro.jpg",
   },
   {
     id: 6,
@@ -70,14 +70,14 @@ const PRODUCTS = [
     name: "Bánh Ú",
     price: 30000,
     category: "Bánh Ú",
-    image: "Images/banhu.jpg",
+    image: "images/banhu.jpg",
   },
   {
     id: 11,
     name: "Bánh Ít",
     price: 8000,
     category: "Bánh Ít",
-    image: "Images/banhit1.jpg",
+    image: "images/banhit1.jpg",
   },
   {
     id: 12,
