@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bánh Tét Mẹ Anh</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Welcome Overlay -->
+    <div class="welcome-overlay" id="welcomeOverlay">
+      <div class="welcome-icon">🍃</div>
+      <h1>Bánh Tét Mẹ Anh</h1>
+      <p>Gói trọn yêu thương, giữ trọn vị nhà</p>
+      <button id="enterBtn">Khám phá hương vị</button>
+    </div>
+
+    <!-- Audio -->
+    <audio id="bgAudio" loop preload="auto">
+      <source src="audio/audio-backround.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Background stickers -->
+    <div class="bg-dynamic" id="bgDynamic"></div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="logo" id="logo">
+          <img
+            src="Images/logo2.jpg"
+            alt="Logo Bánh Tét Mẹ Anh"
+            class="logo-img"
+          />
+          <div class="logo-text">Bánh Tét Mẹ Anh</div>
+        </div>
+
+        <div class="search-box desktop-search">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="searchInput" placeholder="Tìm kiếm bánh..." />
+        </div>
+
+        <div class="header-actions">
+          <button class="icon-btn audio-btn" id="audioBtn" title="Bật/Tắt nhạc">
+            🔇
+          </button>
+
+          <button class="cart-btn" id="openCartBtn">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-search">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input
+            type="text"
+            id="mobileSearchInput"
+            placeholder="Tìm kiếm sản phẩm..."
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-bg">
+          <img src="images/banner0.jpg" alt="Bánh Tét Truyền Thống" />
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+          <span class="hero-badge">QUÀ BÁNH DÂN GIAN</span>
+          <h1>Gói trọn yêu thương,<br />giữ trọn vị nhà</h1>
+          <p>"Món ăn dân gian để mọi nhà thêm trọn vẹn."</p>
+          <button class="primary-btn" id="orderNowBtn">
+            Đặt Hàng Ngay <span>›</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about-section">
+        <div class="about-card">
+          <div class="blur blur-green"></div>
+          <div class="blur blur-orange"></div>
+
+          <div class="about-image">
+            <img src="images/cauchuyen.jpg" alt="Đôi bàn tay mẹ" />
+            <div class="about-badge">
+              <p>100%</p>
+              <span>Thủ công<br />truyền thống</span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h2>Câu Chuyện Mẹ Anh</h2>
+            <p>
+              Giữa nhịp sống hối hả, <strong>Bánh tét Mẹ Anh</strong> ra đời từ
+              nỗi nhớ hương vị quê nhà và sự chăm chút từ đôi bàn tay mẹ.
+            </p>
+            <p>
+              Bắt nguồn từ làng nghề Trà Cuôn với khẳng định 100% sản xuất thủ
+              công, chúng tôi gói ghém sự tận tâm vào từng đòn bánh sạch lành
+              mạnh.
+            </p>
+            <p>
+              Không dừng lại ở giá trị cũ, Mẹ Anh dần trở nên tinh tế và tiện
+              lợi hơn cho đặc sản quê hương. Chúng tôi tự hào biến thứ quà
+              truyền thống thành món ăn hằng ngày và giải pháp quà biếu đặc sản.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section class="products-section" id="products">
+        <div class="container">
+          <div class="section-title">
+            <h2>Thực Đơn Mẹ Anh</h2>
+            <p>Những món quà quê được gói ghém bằng cả tấm lòng</p>
+          </div>
+
+          <div class="search-result" id="searchResult"></div>
+          <div id="productsContainer"></div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact-section">
+        <div class="container contact-container">
+          <h2>Kết nối với Mẹ Anh</h2>
+          <div class="contact-links">
+            <a href="#">📘 Facebook</a>
+            <a href="#">Zalo</a>
+            <a href="#">🎵 TikTok</a>
+            <a href="tel:0123456789">📞 0123 456 789</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="wood-bg"></div>
+      <div class="footer-content">
+        <div class="footer-logo">MA</div>
+        <h3>"Mỗi đòn bánh là một phần yêu thương mẹ gửi gắm."</h3>
+        <div class="footer-line"></div>
+        <p>
+          © 2026 Bánh Tét Mẹ Anh. All rights reserved. <br />
+          Đặc sản Trà Cuôn chính gốc.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-overlay" id="cartOverlay">
+      <div class="cart-backdrop" id="cartBackdrop"></div>
+
+      <aside class="cart-sidebar">
+        <div class="cart-header">
+          <h2 id="cartTitle">🛒 Giỏ Hàng (0)</h2>
+          <button id="closeCartBtn">✕</button>
+        </div>
+
+        <div class="cart-body" id="cartBody"></div>
+
+        <div class="cart-footer" id="cartFooter"></div>
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
