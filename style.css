@@ -645,11 +645,17 @@ main {
 .contact-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .contact-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
   padding: 13px 24px;
   border-radius: 999px;
   font-weight: 700;
@@ -657,24 +663,55 @@ main {
   transition: 0.25s;
 }
 
+/* Icon Font Awesome */
+.contact-fa {
+  font-size: 22px;
+}
+
+/* Facebook */
 .contact-links a:nth-child(1) {
   color: #2563eb;
   background: #eff6ff;
 }
 
-.contact-links a:nth-child(2) {
-  color: #0ea5e9;
-  background: #e0f2fe;
+.facebook-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #1877f2;
+  color: white;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
 }
 
-.contact-links a:nth-child(3) {
+.facebook-circle i {
+  font-size: 16px;
+  line-height: 1;
+  transform: translateX(0px) translateY(1px);
+}
+
+/* TikTok */
+.contact-links a:nth-child(2) {
   color: #222;
   background: #f2f2f2;
 }
 
-.contact-links a:nth-child(4) {
+.tiktok-icon {
+  color: #111;
+}
+
+/* Phone */
+.contact-links a:nth-child(3) {
   color: var(--primary);
   background: rgba(109, 158, 21, 0.1);
+}
+
+.phone-icon {
+  color: #e84393;
 }
 
 .contact-links a:hover {
